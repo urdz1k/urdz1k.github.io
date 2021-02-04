@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta forua="true" http-equiv="Cache-Control" content="max-age=0"/>
+    <link rel="stylesheet" href="mathquill.css"/>
+    <script src="jquery-1.11.1.js"></script>
+    <script src="mathquill.js"></script>
+</head>
+
+<body style="background-color:#fff">
+    <p>Type math here: <span id="math-field"></span></p>
+   <script>
+        var mathFieldSpan = document.getElementById('math-field');
+        
+        var MQ = MathQuill.getInterface(2); // for backcompat
+        var mathField = MQ.MathField(mathFieldSpan, {
+          spaceBehavesLikeTab: true, // configurable
+        });
+        </script>
+
+</body>
+
+</html>
